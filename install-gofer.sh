@@ -7,7 +7,7 @@ export GOFER=/usr/local/lib/standard.prelude
 
 
 #create temp directory for pusimple.pre
-mkdir -p ~/temp/gofer
+mkdir -p /home/$myhome/temp/gofer
 cp /usr/local/bin/pusimple.pre /home/$myhome/temp/gofer/
 cp /usr/local/bin/pustd.pre /home/$myhome/temp/gofer/
 
