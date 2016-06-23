@@ -1,5 +1,6 @@
 #!/bin/bash
 #some path fixing after the installation
+myhome=$(logname)
 
 #export the path of sample.prelude
 export GOFER=/usr/local/lib/standard.prelude
@@ -7,14 +8,14 @@ export GOFER=/usr/local/lib/standard.prelude
 
 #create temp directory for pusimple.pre
 mkdir -p ~/temp/gofer
-cp /usr/local/bin/pusimple.pre ~/temp/gofer/
-cp /usr/local/bin/pustd.pre ~/temp/gofer/
+cp /usr/local/bin/pusimple.pre /home/$myhome/temp/gofer/
+cp /usr/local/bin/pustd.pre /home/$myhome/temp/gofer/
 
 
 #alias into .bashrc for pustd.pre prelude file
-echo "alias gofer='cd /usr/local/bin ; gofer ; cd -'" >> ~/.bashrc
-source ~/.bashrc
+echo "alias gofer='cd /usr/local/bin ; gofer ; cd -'" >> /home/$myhome/.bashrc
+source /home/$myhome/.bashrc
 
-echo "gofer is set"
+echo "Gofer is set"
 
 
