@@ -29,4 +29,5 @@ run below commands:
 
 	sudo dpkg -i gofer_1.0-1_i386.deb
 	sudo ./install-gofer.sh
+	source ./bashrc (* from your home directory)
 
